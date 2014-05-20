@@ -11,7 +11,7 @@
 * Fate Sharing
 
 ### Design Goal of Networking
-*****Multiplexed*** virtualization of existing ***interconnected*** networks**
+***Multiplexed*** virtualization of existing ***interconnected*** networks
 * Statistical multiplexing/packet switching - designed to solve the sharing problem
 * Narrow Waist - designed to solve interconnection problem
 
@@ -66,3 +66,33 @@
 
 ### End-to-End Argument
 * ![End-to-End](images/saltzer-reed.png)
+* Dumb network, intelligent endpoints
+  * Error handling in file transfer
+  * End to end encryption
+  * TCP/IP split in error handling
+* **File Transfer**
+  * Sending side
+    1.  Read file from disk
+    2.  Communication system sends file
+    3.  Transmits packets
+  * Receiving side
+    1.  Give file to file transfer program
+    2.  Write to disk
+  * Errors:
+    * Read/write
+    * breaking up/assembling
+    * communication system
+  * **All require application level checking**
+
+### End-to-End Violations
+* NAT
+* VPN tunnels
+* TCP splitting
+* Spam
+* What about spam filters? Peer2Peer systems? Caches?
+* **Questions**
+  * What's in/out?
+    * Routing, Mulicast, QoS, NAT
+
+### Violation: NAT
+* End point is not always the actual endpoint
