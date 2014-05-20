@@ -7,13 +7,13 @@
 
 ### TCP/IP Started around 1973
 
-**1982 - DNS**
-**1988 - TCP Congestion control** 
-**1989 - BGP**
-**1992 - Streaming media**
-**1993 - WWW**
-**1995 - Altavista**
-**2000 - P2P, filesharing**
+* **1982 - DNS**
+* **1988 - TCP Congestion control** 
+* **1989 - BGP**
+* **1992 - Streaming media**
+* **1993 - WWW**
+* **1995 - Altavista**
+* **2000 - P2P, filesharing**
 
 ##Problems now
 1. Running out of IPv4 addresses
