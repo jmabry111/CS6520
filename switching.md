@@ -18,3 +18,33 @@
   * Broadast packet is flooded out all ports
   * If there is a loop, the looped port is confused and doesnt know whether to remember the broadcast or flood out all ports again.
 
+### Spanning Tree
+**Allow loop free forwarding on a topology that may contain cycles.**
+
+### Constructing Spanning Tree
+1.  Select root (e.g. switch with smallest ID)
+2.  **At each switch:** exclude link if not on shortest path to root
+
+* Initially, every node thinks its the root.
+  * update view of root
+  * compute new root
+
+## Switches vs. Routers
+* Switches: Layer 2/Ethernet
+  * Auto-configuring
+  * Forwarding tends to be fast
+  * **Major limitations**
+    * Broadcast - spanning tree, ARP queries, have high overhead
+* Routers: Layer 3/IP
+  * Not restricted to spanning tree
+
+### Buffer Sizing
+* How much buffering do routers/switches need?
+  * Base Rule: Buffer = 2time X capacity
+
+***REVISIT THIS TOPIC***
+
+### Central Limit Theorem (CLT)
+* More variables => narrorwer Gaussian
+* congestion windows of flows => fluctuation of sum of all congestion windows
+* 2tXc -> (2tXc)/√n
