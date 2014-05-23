@@ -17,8 +17,8 @@
 * Routers compute costs to each destination based on shortest available path
   * Bellman-Ford
   * ![Bellman-Ford Equation](images/bellman.png)
-  * [Bellman-Ford Example](https://www.youtube.com/watch?v=00AAnwgl2DI)
-  * [Count to Infinity Problem](https://www.youtube.com/watch?v=_lAJyA70Z-o)
+  * [Bellman-Ford Example](https://www.youtube.com/watch?v=00AAnwgl2DI) (video)
+  * [Count to Infinity Problem](https://www.youtube.com/watch?v=_lAJyA70Z-o) (video)
 * **RIP**
   * Circa 1982
   * Eges have unit cost
@@ -79,4 +79,4 @@
   * From peer: advertise to other customers
 
 ### Interdomain Routing can Oscillate
-* [Oscillation Demonstration](https://www.youtube.com/watch?v=Cb5VSo6h5_0)
+* [Oscillation Demonstration](https://www.youtube.com/watch?v=Cb5VSo6h5_0) (video)
