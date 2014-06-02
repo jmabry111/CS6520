@@ -30,3 +30,23 @@
 * **whois -h whois.ra.net ip address**
 
 ### CIDR - Classless Inter Domain Routing
+
+* 32 bits: IP Address + "Mask"
+* Example 65.14.248.0/22
+* Mask length = Network ID
+* Problem - Possible to have overlapping address spaces
+* 65.14.248.0/24 overlaps above example
+* If overlapped entries are discovered, longer mask length prevails
+
+* *Longest Prefix Match*
+* each packet has dest. IP
+* Router looks up table entry that matches that address
+* ![table](images/iptable.png)
+  * If dest. address is found in multiple ip networks, router chooses network with longest mask.
+* CIDR resulted in drastic increase in routing
+
+* *Multihoning*
+  * Frustrates Aggregation
+  * ![multihoning](images/multihoning.png)
+
+
