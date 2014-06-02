@@ -49,4 +49,10 @@
   * Frustrates Aggregation
   * ![multihoning](images/multihoning.png)
 
+* *Longest Prefix Match to control Inbound Traffic*
+  * A - 10.1.0.0/16 advertises to B & C
+  * B & C in turn advertise to D
+  * To balance load, A could advertise 10.1.0.0/17 to B and 10.1.128.0/17 to C
+  * This will allow 10.1.128.x to traverse thru C and 10.1.0.x to traverse thru B
+  * Allowing essentially 1/2 of traffic to 10.1.0.0/16 to go thru B & 1/2 thru C
 
