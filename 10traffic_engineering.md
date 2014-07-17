@@ -112,3 +112,29 @@
   * Structure constrains expansion
     * Hypercube: 2<sup>k</sup> switches
     * 3-level Fat Tree: 5<sup>k<sup>2</sup></sup>/4 switches
+* Random Regular Graph
+  * randomly selected from regular graphs
+  * each node has same degree
+  * switches are nodes
+  * Example
+    * 432 servers
+    * 180 switches
+    * degree 12
+    * k<sub>i</sub> total parts
+    * r<sub>i</sub> to connect to other Topographic switches
+    * k<sub>i</sub> - r<sub>i</sub> to servers
+    * N(k<sub>i</sub> - r<sub>i</sub>) servers
+    * RRG(N,k,r)
+* **Constructing Jellyfish**
+  1. Pick a random switch pair
+    * must have free ports and not be neighbors
+  2. Join them with link 
+  3. Repeat until no more links can be added
+  4. If switch remains with ≥ 2 free ports, switches can be added by removing random existing link and adding links to new switch.
+* ![Fat Tree vs. Jellyfish](images/fatvsjelly.png)
+* Topology Design
+  * How close are random graphs to optimal?
+  * What about heterogeneous designs?
+* System Design
+  * Physical cabling?
+  * Routing?
